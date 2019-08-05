@@ -42,3 +42,8 @@ class ControllerExec:
         cmd= "xprctl logout"
         returned_output=subprocess.check_output(cmd)
         print('Output:', returned_output)
+
+
+if __name__=="__main__":
+    controller_exec=ControllerExec()
+    controller_exec.login()
